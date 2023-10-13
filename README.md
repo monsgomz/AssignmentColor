@@ -24,7 +24,7 @@ Whit this project I learned
 - Sliders and buttons
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Color Picker](/colorpicker)
 
 
 ## Support
