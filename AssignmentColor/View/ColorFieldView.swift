@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-struct FieldColorView: View {
+struct ColorFieldView: View {
 	
 	@Binding var colorHexa: String
 	
 	var body: some View {
-		TextField("Write HEX color or CSS", text: $colorHexa)
+		TextField("Write HEX color", text: $colorHexa)
 			.textFieldStyle(.roundedBorder)
 			.textInputAutocapitalization(.characters)
 			.background(
-			RoundedRectangle(cornerRadius: 5)
-				.fill(Color.white.opacity(0.3)
-					 ))
+				RoundedRectangle(cornerRadius: 5)
+					.fill(Color.white.opacity(0.3)
+						 ))
 	}
 }
 

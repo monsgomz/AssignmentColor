@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct OpacityView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+	
+	@Binding var opacitySlider: Double
+	
+	var body: some View {
+		Slider(value: $opacitySlider , in: 0 ... 255,
+			   label: { Text("txt")},
+			   minimumValueLabel: {Text("0")},
+			   maximumValueLabel: { Text("255") }
+		)
+		.tint(.black)
+		Text("Opacity: \(String(format: "%.0f", opacitySlider))")
+			.padding()
+		
+	}
 }
-
-#Preview {
-    OpacityView()
-}
+//#Preview {
+//    OpacityView()
+//}

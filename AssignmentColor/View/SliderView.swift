@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct SliderView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+	
+	@Binding var colorSlider: Double
+	var txt: String
+	var fColor: Color
+	
+	var body: some View {
+		Slider(value: $colorSlider , in: 0 ... 255,
+			   label: { Text("txt")},
+			   minimumValueLabel: {Text("0")},
+			   maximumValueLabel: { Text("255") }
+		)
+		.tint(fColor)
+		
+		Text("\(txt): \(String(format: "%.0f", colorSlider))").foregroundColor(fColor)
+		
+	}
 }
 
-#Preview {
-    SliderView()
-}
+//#Preview {
+//    SliderView()
+//}
