@@ -24,7 +24,7 @@ Whit this project I learned
 - Sliders and buttons
 ## Screenshots
 
-![Color Picker](/colorpicker)
+![Color Picker](colorpicker.png)
 
 
 ## Support
