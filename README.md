@@ -1,5 +1,5 @@
 
-# Swift Data Exercise
+# Color picker
 
 Welcome to the Swift Color Picker! In this an assignment, this is a color managment application to learn the function of the sliders, buttons and binding variables
 
